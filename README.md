@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/while-true-do/ansible-role-uptimerobot.svg?branch=master)](https://travis-ci.org/while-true-do/ansible-role-uptimerobot)
+
 # Ansible Role: Uptimerobot
 | A very simple role to pause and start uptimerobot monitors.
 
