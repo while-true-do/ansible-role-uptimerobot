@@ -11,10 +11,10 @@ Galaxy Link: <https://galaxy.ansible.com/while-true-do/uptimerobot>
 ansible-galaxy install while-true-do.uptimerobot
 ```
 
-Github Link: <https://github.com/CHANGEME>
+Github Link: <https://github.com/while-true-do/ansible-role-uptimerobot>
 
 ```
-git clone CHANGEME
+git clone https://github.com/while-true-do/ansible-role-uptimerobot while-true-do.uptimerobot
 ```
 
 ## Requirements
@@ -52,9 +52,9 @@ This work is licensed under a [BSD License](https://opensource.org/licenses/BSD-
 
 ## Contribute / Bugs
 
-**bug reports:** <https://github.com/while-true-do/CHANGEME/issues>
+**bug reports:** <https://github.com/while-true-do/ansible-role-uptimerobot/issues>
 
-**contributers:** <https://github.com/while-true-do/CHANGEME/graphs/contributors>
+**contributers:** <https://github.com/while-true-do/ansible-role-uptimerobot/graphs/contributors>
 
 ## Author Information
 
