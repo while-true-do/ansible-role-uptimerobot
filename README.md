@@ -1,5 +1,5 @@
 # Ansible Role: Uptimerobot
-| A very simple role to pause and start uptimerobot monitors
+| A very simple role to pause and start uptimerobot monitors.
 
 ## Installation
 
