@@ -24,7 +24,7 @@ install:
   - printf '[defaults]\nroles_path=../' >ansible.cfg
 
   # Link github repo to ansible-galaxy name
-  - ln -s  $PWD ../while-true-do.localization
+  - ln -s  $PWD ../while-true-do.uptimerobot
 
 # Run the tests
 script:
