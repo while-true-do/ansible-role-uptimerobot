@@ -1,0 +1,9 @@
+---
+- name: "{{ utr_monitor_state }}"
+  uptimerobot:
+    monitorid: "{{ utr_monitor_id }}"
+    state: "{{ utr_monitor_state }}"
+    apikey: "{{ utr_api_key }}"
+  when: utr_api_key and utr_monitor_id and utr_monitor_state
+  tags:
+    - monitor
