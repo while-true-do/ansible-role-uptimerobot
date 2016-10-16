@@ -1,6 +1,5 @@
 ---
 # TODO: Build better testing for multiple containers and os support
-# CHANGEME: Fill in all needed information
 language: python
 python: "2.7"
 
