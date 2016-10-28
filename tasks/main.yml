@@ -1,4 +1,7 @@
 ---
+- meta: flush_handlers
+  when: utr_flush_handlers == 'true'
+
 - name: "{{ utr_monitor_state }}"
   uptimerobot:
     monitorid: "{{ utr_monitor_id }}"
