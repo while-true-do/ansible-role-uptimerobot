@@ -1,12 +1,13 @@
 ---
 - meta: flush_handlers
-  when: utr_flush_handlers == 'true'
+  when: utr_flush_handlers == 'true' and utr_monitor_state != "paused"
 
 - name: "{{ utr_monitor_state }}"
   uptimerobot:
-    monitorid: "{{ utr_monitor_id }}"
+    monitorid: "{{ item }}"
     state: "{{ utr_monitor_state }}"
     apikey: "{{ utr_api_key }}"
+  with_items: "{{ utr_monitor_id }}"
   when: utr_api_key and utr_monitor_id and utr_monitor_state
   tags:
     - monitor
