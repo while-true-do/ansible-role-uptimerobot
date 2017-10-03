@@ -17,10 +17,10 @@ galaxy_info:
   - name: Fedora
     versions:
     - 23
+    - 24
+    - 25
+    - 26
 
   galaxy_tags:
-    - locale
-    - config
-    - common
-    - keyboard
-    - localization
+    - monitoring
+    - system
