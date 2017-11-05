@@ -30,9 +30,11 @@ You have to set the following variables to use this role. See [here](https://upt
 
 ```
 # defaults/main.yml
+---
 utr_api_key: ''
-utr_monitor_id: ''
+utr_monitor_id: []
 utr_monitor_state: ''
+utr_flush_handlers: 'true'
 ```
 
 ## Example Playbook
