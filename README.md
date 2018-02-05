@@ -1,67 +1,80 @@
 [![Build Status](https://travis-ci.org/while-true-do/ansible-role-uptimerobot.svg?branch=master)](https://travis-ci.org/while-true-do/ansible-role-uptimerobot)
 
 # Ansible Role: Uptimerobot
-| A very simple role to pause and start uptimerobot monitors.
+| A very simple role to pause and start Uptimerobot monitors.
+
+## Motivation
+
+[Uptimerobot](https://uptimerobot.com/) is a free monitoring tool with an integrated status-page and lots of monitor capabilities. Pausing and Starting the monitors during ansible runs is a key feature of maintenance windows to avoid unwanted alerts.
 
 ## Installation
 
-Galaxy Link: <https://galaxy.ansible.com/while-true-do/uptimerobot>
+Install from [Ansible Galaxy](https://galaxy.ansible.com/while-true-do/uptimerobot)
 
 ```
 ansible-galaxy install while-true-do.uptimerobot
 ```
 
-Github Link: <https://github.com/while-true-do/ansible-role-uptimerobot>
+Install from [GitHhub](https://github.com/while-true-do/ansible-role-uptimerobot)
 
 ```
-git clone https://github.com/while-true-do/ansible-role-uptimerobot while-true-do.uptimerobot
+git clone https://github.com/while-true-do/ansible-role-uptimerobot.git while-true-do.uptimerobot
 ```
 
 ## Requirements
 
-None.
+Valid Uptimerobot Account and [API Key](https://uptimerobot.com/api).
+
+Used Modules:
+
+-   [uptimerobot](http://docs.ansible.com/ansible/latest/uptimerobot_module.html)
+
 
 ## Dependencies
 
 None.
 
 ## Role Variables
-You have to set the following variables to use this role. See [here](https://uptimerobot.com/api), how you can use it.
+You have to set the following variables to use this role.
 
 ```
 # defaults/main.yml
----
-utr_api_key: ''
-utr_monitor_id: []
-utr_monitor_state: ''
-utr_flush_handlers: 'true'
+
+wtd_utr_api_key: ''
+wtd_utr_monitor_id: []
+wtd_utr_monitor_state: ''
+# You can set this to false, if you are using pre_task/post_task in your play.
+wtd_utr_flush_handlers: 'true'
 ```
 
-## Example Playbook
-To pause a Monitor for WebServer1, you can do the following example:
+## Testing
+
+All tests are located in [test directory](./tests/).
+
+Basic testing:
 
 ```
-- hosts: WebServer1
-  roles:
-    - { role: while-true-do.uptimerobot, utr_api_key: 12345-1234512345, utr_monitor_id: 12345, utr_monitor_state: paused }
-    - { role: AnotherRoleThatDoesSomething }
-    - { role: while-true-do.uptimerobot, utr_api_key: 12345-1234512345, utr_monitor_id: 12345, utr_monitor_state: started }
+bash ./tests/test-spelling.sh
+bash ./tests/test-ansible.sh
 ```
+
+## Contribute / Bugs
+
+Thank you so much for considering to contribute. Every contribution helps us.
+We are really happy, when somebody is joining the hard work. Please have a look
+at the links first.
+
+-   [Contribution Guidelines](./docs/CONTRIBUTING.md)
+-   [Create an issue or Request](https://github.com/while-true-do/ansible-role-uptimerobot/issues)
+-   [See who was contributing already](https://github.com/while-true-do/ansible-role-uptimerobot/graphs/contributors)
 
 ## License
 
 This work is licensed under a [BSD License](https://opensource.org/licenses/BSD-3-Clause).
 
-## Contribute / Bugs
-
-**bug reports:** <https://github.com/while-true-do/ansible-role-uptimerobot/issues>
-
-**contributers:** <https://github.com/while-true-do/ansible-role-uptimerobot/graphs/contributors>
-
 ## Author Information
 
-**blog:** <https://blog.while-true-do.org>
+Blog: [blog.while-true-do.org](https://blog.while-true-do.org)
 
-**github:** <https://github.com/daniel-wtd>
+Mail: [hello@while-true-do.org](mailto:hello@while-true-do.org)
 
-**contact:** [mail@while-true-do.org](mailto:mail@while-true-do.org)
