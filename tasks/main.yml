@@ -1,13 +1,13 @@
 ---
 - meta: flush_handlers
-  when: utr_flush_handlers == 'true' and utr_monitor_state != "paused"
+  when: wtd_utr_flush_handlers == 'true' and wtd_utr_monitor_state != "paused"
 
-- name: "{{ utr_monitor_state }}"
+- name: "{{ wtd_utr_monitor_state }}"
   uptimerobot:
     monitorid: "{{ item }}"
-    state: "{{ utr_monitor_state }}"
-    apikey: "{{ utr_api_key }}"
-  with_items: "{{ utr_monitor_id }}"
-  when: utr_api_key and utr_monitor_id and utr_monitor_state
+    state: "{{ wtd_utr_monitor_state }}"
+    apikey: "{{ wtd_utr_api_key }}"
+  with_items: "{{ wtd_utr_monitor_id }}"
+  when: wtd_utr_api_key and wtd_utr_monitor_id and wtd_utr_monitor_state
   tags:
     - monitor

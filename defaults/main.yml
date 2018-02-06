@@ -1,5 +1,6 @@
 ---
-utr_api_key: ''
-utr_monitor_id: []
-utr_monitor_state: ''
-utr_flush_handlers: 'true'
+wtd_utr_api_key: ''
+wtd_utr_monitor_id: []
+wtd_utr_monitor_state: ''
+# You can set this to false, if you are using pre_task/post_task in your play.
+wtd_utr_flush_handlers: 'true'

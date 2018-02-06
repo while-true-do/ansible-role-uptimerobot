@@ -1,8 +1,9 @@
 dependencies: []
 
 galaxy_info:
-  author: daniel@while-true-do.org
+  author: while-true-do.org
   description: A very simple role to pause and start uptimerobot monitors.
+  company: while-true-do.org
 
   issue_tracker_url: https://github.com/while-true-do/ansible-role-wtd-bash/issues
   github_branch: master
@@ -14,12 +15,6 @@ galaxy_info:
   - name: EL
     versions:
     - 7
-  - name: Fedora
-    versions:
-    - 23
-    - 24
-    - 25
-    - 26
 
   galaxy_tags:
     - monitoring
