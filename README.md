@@ -9,16 +9,16 @@
 
 ## Installation
 
-Install from [Ansible Galaxy](https://galaxy.ansible.com/while-true-do/uptimerobot)
+Install from [Ansible Galaxy](https://galaxy.ansible.com/while_true_do/uptimerobot)
 
 ```
-ansible-galaxy install while-true-do.uptimerobot
+ansible-galaxy install while_true_do.uptimerobot
 ```
 
 Install from [GitHhub](https://github.com/while-true-do/ansible-role-uptimerobot)
 
 ```
-git clone https://github.com/while-true-do/ansible-role-uptimerobot.git while-true-do.uptimerobot
+git clone https://github.com/while-true-do/ansible-role-uptimerobot.git while_true_do.uptimerobot
 ```
 
 ## Requirements
